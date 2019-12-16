@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="104.641672">
+<testcase classname="Testes da Sprint 17/18/19/20" name="Validar o checklist para todas as telas e campos para cada portal" time="104.641672">
+<system-out><![CDATA[Dado CL - acessar o portal do backoffice....................................passed
+Então CL - fazer o checklist para os campos da página home do backoffice....passed
+Quando CL - acessar a opção de Serviços.....................................passed
+Então CL - abrir a opção de Apontamento.....................................passed
+E CL - abrir a opção de Consultar Apontamento...............................passed
+Então CL - fazer o checklist para os elementos da página de Consulta de Apontamento.passed
+Quando CL - acessar a opção de Incluir Apontamento..........................passed
+Então CL - fazer o checklist para os elementos da página de Incluir de Apontamento.passed
+]]></system-out>
+</testcase>
+</testsuite>

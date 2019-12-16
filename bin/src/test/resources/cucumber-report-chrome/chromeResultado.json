@@ -1,0 +1,963 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Validar o checklist para todas as telas e campos para cada portal",
+        "description": "",
+        "id": "testes-da-sprint-17/18/19;validar-o-checklist-para-todas-as-telas-e-campos-para-cada-portal",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 9840684201,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "CL - acessar portal do consumidor",
+            "match": {
+              "location": "TestsGIC.acessarPortalConsumidorCL()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 17315587156,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "CL - fazer o checklist para os campos da página inicial do portal do consumidor",
+            "match": {
+              "location": "TestsGIC.fazerChecklistHomeConsumidorCL()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 2091707840,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "CL - validar que o login foi feito",
+            "match": {
+              "location": "TestsGIC.validarLoginEfetuadoCL()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 2317023539,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "CL - fazer o checklist para os elementos da home",
+            "match": {
+              "location": "TestsGIC.fazerChecklistConsumidorCL()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 2387256547,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "CL - abrir a página de Contestar Dívida",
+            "match": {
+              "location": "TestsGIC.abrirContestarDividaConsumidorCL()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 22845708976,
+              "error_message": "java.lang.NullPointerException\r\n\tat br.com.basepages.BasePageJava.obterTexto(BasePageJava.java:232)\r\n\tat br.com.test.testeWeb.TestsGIC.fazerChecklistContestarDividaConsumidorCL(TestsGIC.java:152)\r\n\tat ✽.Então CL - fazer o checklist para os elementos da página de Contestar Dívida(Feature.feature:11)\r\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "CL - fazer o checklist para os elementos da página de Contestar Dívida",
+            "match": {
+              "location": "TestsGIC.fazerChecklistContestarDividaConsumidorCL()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "CL - acessar o portal do backoffice",
+            "match": {
+              "location": "TestsGIC.acessarPortalBackofficeCL()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "CL - fazer o checklist para os campos da página home do backoffice",
+            "match": {
+              "location": "TestsGIC.checklistElementosTelaHomeBackofficeCL()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "CL - acessar a opção de Serviços",
+            "match": {
+              "location": "TestsGIC.acessarOpcaoServicosCL()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "CL - abrir a opção de Apontamento",
+            "match": {
+              "location": "TestsGIC.acessarOpcaoApontamentoCL()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "CL - abrir a opção de Consultar Apontamento",
+            "match": {
+              "location": "TestsGIC.acessarOpcaoConsultarApontamentoCL()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "CL - fazer o checklist para os elementos da página de Consulta de Apontamento",
+            "match": {
+              "location": "TestsGIC.checklistConsultaDeApontamentoCL()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Checklist"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Preparar e configurar opção de contestação de dívida (4.1.6/4.1.6.1)",
+        "description": "",
+        "id": "testes-da-sprint-17/18/19;preparar-e-configurar-opção-de-contestação-de-dívida-(4.1.6/4.1.6.1)",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 2035137963,
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d68.0.3440.84)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027NBBV022025\u0027, ip: \u0027192.168.198.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir\u003dC:\\Users\\glgomes\\AppData\\Local\\Temp\\scoped_dir21664_16918}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.84, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: c5bb21752748be1f28c0b8561a86f529\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:856)\r\n\tat br.com.basepages.BasePageJava.navegarUrl(BasePageJava.java:343)\r\n\tat br.com.test.testeWeb.TestsGIC.acessarPortalConsumidorCT01(TestsGIC.java:271)\r\n\tat ✽.Dado CT01 - que eu acessei o portal do consumidor(Feature.feature:21)\r\n",
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "CT01 - que eu acessei o portal do consumidor",
+            "match": {
+              "location": "TestsGIC.acessarPortalConsumidorCT01()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "CT01 - eu solicitar o login com o google",
+            "match": {
+              "location": "TestsGIC.loginComGooglePortalConsumidorCT01()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "CT01 - deverei inserir um e-mail válido",
+            "match": {
+              "location": "TestsGIC.inserirUmEmailValidoPortalConsumidorCT01()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "CT01 - inserir a senha correta",
+            "match": {
+              "location": "TestsGIC.inserirUmaSenhaCorretaPortalConsumidorCT01()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "CT01 - validar que o login foi feito corretamente",
+            "match": {
+              "location": "TestsGIC.validarLoginFeitoCorretamentePortalConsumidorCT01()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "CT01 - abrir o menu de opções do Portal Consumidor",
+            "match": {
+              "location": "TestsGIC.abrirMenuDeOpcoesPortalConsumidorCT01()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "CT01 - acessar a opção de Contestar Dívida",
+            "match": {
+              "location": "TestsGIC.abrirOpcaoDeContestarDividaPortalConsumidorCT01()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "CT01 - validar as informações do cabeçalho",
+            "match": {
+              "location": "TestsGIC.validarInformaçõesDoCabecalhoPortalConsumidorCT01()"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@PrepararTelaContestacao"
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Configurar e apresentar tela de análise de contestação de dívida e aprovar contestação  (4.1.6.4/4.1.6.5/4.1.6.6/4.1.6.6.a)",
+        "description": "",
+        "id": "testes-da-sprint-17/18/19;configurar-e-apresentar-tela-de-análise-de-contestação-de-dívida-e-aprovar-contestação--(4.1.6.4/4.1.6.5/4.1.6.6/4.1.6.6.a)",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 4379125,
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d68.0.3440.84)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027NBBV022025\u0027, ip: \u0027192.168.198.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir\u003dC:\\Users\\glgomes\\AppData\\Local\\Temp\\scoped_dir21664_16918}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.84, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: c5bb21752748be1f28c0b8561a86f529\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:856)\r\n\tat br.com.basepages.BasePageJava.navegarUrl(BasePageJava.java:343)\r\n\tat br.com.test.testeWeb.TestsGIC.acessarPortalDoBackofficeCT02(TestsGIC.java:335)\r\n\tat ✽.Dado CT02 - que eu acessei o portal de backoffice(Feature.feature:33)\r\n",
+              "status": "failed"
+            },
+            "line": 33,
+            "name": "CT02 - que eu acessei o portal de backoffice",
+            "match": {
+              "location": "TestsGIC.acessarPortalDoBackofficeCT02()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "CT02 -  deverei inserir um CPF válido",
+            "match": {
+              "location": "TestsGIC.inserirCpfPortalDoBackofficeCT02()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "CT02 - inserir a senha",
+            "match": {
+              "location": "TestsGIC.inserirSenhaPortalDoBackofficeCT02()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "CT02 - validar que o login foi feito corretamente",
+            "match": {
+              "location": "TestsGIC.fazerLoginPortalDoBackofficeCT02()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "CT02 - abrir o menu de opções do Portal Backoffice",
+            "match": {
+              "location": "TestsGIC.abrirMenuDeOpcoesPortalDoBackofficeCT02()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "CT02 - acessar a opção de Consultar Contestação",
+            "match": {
+              "location": "TestsGIC.acessarOpcaoDeConsultarContestacaoPortalDoBackofficeCT02()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "CT02 - validar que estou na tela de Análise de Contestação",
+            "match": {
+              "location": "TestsGIC.validarOpcaoDeConsultarContestacaoPortalDoBackofficeCT02()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "CT02 - abrir o detalhe da contestação",
+            "match": {
+              "location": "TestsGIC.abrirDetalheDaContestacaoPortalDoBackofficeCT02()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "CT02 - validar que estou na tela de Detalhe de Contestação",
+            "match": {
+              "location": "TestsGIC.validarOpcaoDeDetalheDeContestacaoPortalDoBackofficeCT02()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "CT02 - aprovar a contestação da dívida",
+            "match": {
+              "location": "TestsGIC.aprovarContestacaoPortalDoBackofficeCT02()"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "line": 31,
+            "name": "@PrepararTelaAnaliseContestacaoAprovarContestacao"
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "Configurar e apresentar tela de análise de contestação de dívida e reprovar contestação  (4.1.6.4/4.1.6.5/4.1.6.6/4.1.6.6.a)",
+        "description": "",
+        "id": "testes-da-sprint-17/18/19;configurar-e-apresentar-tela-de-análise-de-contestação-de-dívida-e-reprovar-contestação--(4.1.6.4/4.1.6.5/4.1.6.6/4.1.6.6.a)",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 18261981,
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d68.0.3440.84)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027NBBV022025\u0027, ip: \u0027192.168.198.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir\u003dC:\\Users\\glgomes\\AppData\\Local\\Temp\\scoped_dir21664_16918}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.84, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: c5bb21752748be1f28c0b8561a86f529\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:856)\r\n\tat br.com.basepages.BasePageJava.navegarUrl(BasePageJava.java:343)\r\n\tat br.com.test.testeWeb.TestsGIC.acessarPortalDoBackofficeCT03(TestsGIC.java:398)\r\n\tat ✽.Dado CT03 - que eu acessei o portal de backoffice(Feature.feature:47)\r\n",
+              "status": "failed"
+            },
+            "line": 47,
+            "name": "CT03 - que eu acessei o portal de backoffice",
+            "match": {
+              "location": "TestsGIC.acessarPortalDoBackofficeCT03()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "CT03 -  deverei inserir um CPF válido",
+            "match": {
+              "location": "TestsGIC.inserirCpfPortalDoBackofficeCT03()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "CT03 - inserir a senha",
+            "match": {
+              "location": "TestsGIC.inserirSenhaPortalDoBackofficeCT03()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "CT03 - validar que o login foi feito corretamente",
+            "match": {
+              "location": "TestsGIC.fazerLoginPortalDoBackofficeCT03()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "CT03 - abrir o menu de opções do Portal Backoffice",
+            "match": {
+              "location": "TestsGIC.abrirMenuDeOpcoesPortalDoBackofficeCT03()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "CT03 - acessar a opção de Consultar Contestação",
+            "match": {
+              "location": "TestsGIC.acessarOpcaoDeConsultarContestacaoPortalDoBackofficeCT03()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "CT03 - validar que estou na tela de Análise de Contestação",
+            "match": {
+              "location": "TestsGIC.validarOpcaoDeConsultarContestacaoPortalDoBackofficeCT03()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "CT03 - abrir o detalhe da contestação",
+            "match": {
+              "location": "TestsGIC.abrirDetalheDaContestacaoPortalDoBackofficeCT03()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "CT03 - validar que estou na tela de Detalhe de Contestação",
+            "match": {
+              "location": "TestsGIC.validarOpcaoDeDetalheDeContestacaoPortalDoBackofficeCT03()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "CT03 - reprovar a contestação da dívida",
+            "match": {
+              "location": "TestsGIC.reprovarContestacaoPortalDoBackofficeCT03()"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "line": 45,
+            "name": "@PrepararTelaAnaliseContestacaoReprovarContestacao"
+          }
+        ]
+      },
+      {
+        "line": 59,
+        "name": "Consulta de contestação (4.1.6.2)",
+        "description": "",
+        "id": "testes-da-sprint-17/18/19;consulta-de-contestação-(4.1.6.2)",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 17488509,
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d68.0.3440.84)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027NBBV022025\u0027, ip: \u0027192.168.198.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir\u003dC:\\Users\\glgomes\\AppData\\Local\\Temp\\scoped_dir21664_16918}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.84, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: c5bb21752748be1f28c0b8561a86f529\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:856)\r\n\tat br.com.basepages.BasePageJava.navegarUrl(BasePageJava.java:343)\r\n\tat br.com.test.testeWeb.TestsGIC.acessarPortalDoBackofficeCT04(TestsGIC.java:461)\r\n\tat ✽.Dado CT04 - que eu acessei o portal de backoffice(Feature.feature:60)\r\n",
+              "status": "failed"
+            },
+            "line": 60,
+            "name": "CT04 - que eu acessei o portal de backoffice",
+            "match": {
+              "location": "TestsGIC.acessarPortalDoBackofficeCT04()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "CT04 -  deverei inserir um CPF válido",
+            "match": {
+              "location": "TestsGIC.inserirCpfPortalDoBackofficeCT04()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "CT04 - inserir a senha",
+            "match": {
+              "location": "TestsGIC.inserirSenhaPortalDoBackofficeCT04()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "CT04 - validar que o login foi feito corretamente",
+            "match": {
+              "location": "TestsGIC.fazerLoginPortalDoBackofficeCT04()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "CT04 - abrir o menu de opções do Portal Backoffice",
+            "match": {
+              "location": "TestsGIC.abrirMenuDeOpcoesPortalDoBackofficeCT04()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "CT04 - acessar a opção de Consultar Contestação",
+            "match": {
+              "location": "TestsGIC.acessarOpcaoDeConsultarContestacaoPortalDoBackofficeCT04()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "CT04 - validar que estou na tela de Análise de Contestação",
+            "match": {
+              "location": "TestsGIC.validarOpcaoDeConsultarContestacaoPortalDoBackofficeCT04()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 58,
+            "name": "@ConsultaContestacao"
+          }
+        ]
+      },
+      {
+        "line": 69,
+        "name": "Cadastro de contestação (4.1.6.3)",
+        "description": "",
+        "id": "testes-da-sprint-17/18/19;cadastro-de-contestação-(4.1.6.3)",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 2014588685,
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d68.0.3440.84)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027NBBV022025\u0027, ip: \u0027192.168.198.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir\u003dC:\\Users\\glgomes\\AppData\\Local\\Temp\\scoped_dir21664_16918}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.84, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: c5bb21752748be1f28c0b8561a86f529\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:856)\r\n\tat br.com.basepages.BasePageJava.navegarUrl(BasePageJava.java:343)\r\n\tat br.com.test.testeWeb.TestsGIC.acessarPortalConsumidorCT05(TestsGIC.java:506)\r\n\tat ✽.Dado CT05 - que eu acessei o portal de consumidor(Feature.feature:70)\r\n",
+              "status": "failed"
+            },
+            "line": 70,
+            "name": "CT05 - que eu acessei o portal de consumidor",
+            "match": {
+              "location": "TestsGIC.acessarPortalConsumidorCT05()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 71,
+            "name": "CT05 - eu solicitar o login com o google",
+            "match": {
+              "location": "TestsGIC.loginComGooglePortalConsumidorCT05()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 72,
+            "name": "CT01 - deverei inserir um e-mail válido",
+            "match": {
+              "location": "TestsGIC.inserirUmEmailValidoPortalConsumidorCT01()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "CT01 - inserir a senha correta",
+            "match": {
+              "location": "TestsGIC.inserirUmaSenhaCorretaPortalConsumidorCT01()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "CT05 - validar que o login foi feito corretamente",
+            "match": {
+              "location": "TestsGIC.validarLoginFeitoCorretamentePortalConsumidorCT05()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "CT05 - abrir o menu de opções do Portal Consumidor",
+            "match": {
+              "location": "TestsGIC.abrirMenuDeOpcoesPortalConsumidorCT05()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "CT05 - acessar a opção de Contestar Dívida",
+            "match": {
+              "location": "TestsGIC.abriropcaoDeQuestionarDividaPortalConsumidorCT05()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "CT05 - validar que estou na tela de Contestação",
+            "match": {
+              "location": "TestsGIC.validarTelaDeQuestionarDividaPortalConsumidorCT05()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "CT05 - abrir a dívida para iniciar o cadastro do questionamento",
+            "match": {
+              "location": "TestsGIC.abrirDividaPortalConsumidorCT05()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "CT05 - selecionar o motivo do questionamento",
+            "match": {
+              "location": "TestsGIC.selecionarMotivoDoQuestionamentoPortalConsumidorCT05()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 80,
+            "name": "CT05 - escolher o anexo para o questionamento",
+            "match": {
+              "location": "TestsGIC.escolherAnexoParaQuestionamentoPortalConsumidorCT05()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 81,
+            "name": "CT05 - salvar questionamento de dívida",
+            "match": {
+              "location": "TestsGIC.salvarQuestionamentoPortalConsumidorCT05()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 68,
+            "name": "@CadastrarContestacao"
+          }
+        ]
+      },
+      {
+        "line": 84,
+        "name": "Inclusão de Conglomerado (7.2.1.1.a)",
+        "description": "",
+        "id": "testes-da-sprint-17/18/19;inclusão-de-conglomerado-(7.2.1.1.a)",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 18524160,
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d68.0.3440.84)\n  (Driver info: chromedriver\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027NBBV022025\u0027, ip: \u0027192.168.198.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir\u003dC:\\Users\\glgomes\\AppData\\Local\\Temp\\scoped_dir21664_16918}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.84, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: c5bb21752748be1f28c0b8561a86f529\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:273)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:856)\r\n\tat br.com.basepages.BasePageJava.navegarUrl(BasePageJava.java:343)\r\n\tat br.com.test.testeWeb.TestsGIC.acessarPortalDoBackofficeCT07(TestsGIC.java:614)\r\n\tat ✽.Dado CT06 - que eu acessei o portal de backoffice(Feature.feature:85)\r\n",
+              "status": "failed"
+            },
+            "line": 85,
+            "name": "CT06 - que eu acessei o portal de backoffice",
+            "match": {
+              "location": "TestsGIC.acessarPortalDoBackofficeCT07()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "CT06 - deverei inserir um CPF válido",
+            "match": {
+              "location": "TestsGIC.inserirCpfPortalDoBackofficeCT07()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 87,
+            "name": "CT06 - inserir a senha",
+            "match": {
+              "location": "TestsGIC.inserirSenhaPortalDoBackofficeCT07()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 88,
+            "name": "CT06 - validar que o login foi feito corretamente",
+            "match": {
+              "location": "TestsGIC.fazerLoginPortalDoBackofficeCT07()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 89,
+            "name": "CT06 - abrir o menu de opções do Portal Backoffice",
+            "match": {
+              "location": "TestsGIC.abrirMenuDeOpcoesPortalDoBackofficeCT07()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 90,
+            "name": "CT06 - acessar a opção de Conglomerado",
+            "match": {
+              "location": "TestsGIC.acessarOpcaoConglomeradoPortalDoBackofficeCT07()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 91,
+            "name": "CT06 - validar que estou na tela de Cadastro de Conglomerado",
+            "match": {
+              "location": "TestsGIC.validarOpcaoConglomeradoPortalDoBackofficeCT07()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 92,
+            "name": "CT06 - deverei inserir um CNPJ válido",
+            "match": {
+              "location": "TestsGIC.preencherCampoCNPJConglomeradoPortalDoBackofficeCT07()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 93,
+            "name": "CT06 - consultar conglomerado",
+            "match": {
+              "location": "TestsGIC.consultarConglomeradoPortalDoBackofficeCT07()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 94,
+            "name": "CT06 - deverei selecionar a opção de inlcuir fonte",
+            "match": {
+              "location": "TestsGIC.incluirFontesPortalDoBackofficeCT07()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 95,
+            "name": "CT06 - Inserir um CNPJ válido",
+            "match": {
+              "location": "TestsGIC.incluirCNPJfontePortalDoBackofficeCT07()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 96,
+            "name": "CT06 - Selecionar a opção de Incluir Fonte",
+            "match": {
+              "location": "TestsGIC.incluirfontesPortalDoBackofficeCT07()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 97,
+            "name": "CT06 - deverei selecionar a opção de salvar conglomerado",
+            "match": {
+              "location": "TestsGIC.salvarConglomeradoPortalDoBackofficeCT07()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 98,
+            "name": "CT06 - Validar mensagem de sucesso",
+            "match": {
+              "location": "TestsGIC.validarMensagemSucessoConglomeradoPortalDoBackofficeCT07()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 99,
+            "name": "CT06 - Clicar no botao Ok",
+            "match": {
+              "location": "TestsGIC.botaoOkMensagemSucessoPortalDoBackofficeCT07()"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "line": 83,
+            "name": "@IncluirConglomerado"
+          }
+        ]
+      }
+    ],
+    "name": "Testes da Sprint 17/18/19",
+    "description": "",
+    "id": "testes-da-sprint-17/18/19",
+    "keyword": "Funcionalidade",
+    "uri": "Feature.feature"
+  }
+]

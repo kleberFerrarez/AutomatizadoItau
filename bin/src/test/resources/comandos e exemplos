@@ -1,0 +1,31 @@
+
+
+mvn test -Dcucumber.options="pathparafeature"
+mvn test -Dcucumber.options="pathtofeature --tags @annotationsname" -Dbrowser="nomedobrowser"
+mvn install -Dcucumber.options="--tags @foo --format pretty --monochrome"
+mvn test -Dcucumber.options="@target/falhas/rerun.txt"
+
+'mvn test "-Dcucumber.options = --format json:target/firefox.json"'
+'mvn test "-Dcucumber.options = --format json:target/chrome.json"'
+mvn install:install-file -Dfile=/user/usuario/projeto/suaDependencia.jar -DgroupId=org.meujar -DartifactId=meujar -Dversion=1.0.0 -Dpackaging=jar -DgeneratePom=true
+
+
+Para criar um teste novo,
+
+1° Adicionar uma feature no pacote features 
+2° Adicionar uma Classe de teste no pacote Test. Essa classe será responsável
+por ditar a sequência do fluxo, pois ela está lincada com o que é
+descrito na feature.
+3° Adicionar uma classe modelo no pacote models - essa classe modelo 
+deverá possuir os atributos referente a tela que está sendo automatizada
+4° Na classe criada dentro do pacote de testes, você somente descreverá suas ações
+
+
+CMDOR  
+a.Se o objeto estiver dentro de um frame, o xpath deve considerar o caminho inteiro, ou o contexto de pesquisa do GetObject deve ser modificado – como indicado acima.
+Solução: Foco em frame. 
+AMBIENTES 
+O código que lê os dados da planilha não é posicional e assume que a aba é uma tabela do banco de dados. Note, no entanto, que ao trocar o nome de uma coluna, qualquer referência no código à essa coluna precisará ser ajustada.
+Solução: Trabalhar com o código para que ele consiga posicionar em uma célula desejada da planilha. 
+ 
+

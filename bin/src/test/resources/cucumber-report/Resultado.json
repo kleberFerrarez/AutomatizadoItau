@@ -1,0 +1,130 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Validar o checklist para todas as telas e campos para cada portal",
+        "description": "",
+        "id": "testes-da-sprint-17/18/19/20;validar-o-checklist-para-todas-as-telas-e-campos-para-cada-portal",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 15707007036,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "CL - acessar o portal do backoffice",
+            "match": {
+              "location": "TestsGIC.acessarPortalBackofficeCL()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 6304491464,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "CL - fazer o checklist para os campos da página home do backoffice",
+            "match": {
+              "location": "TestsGIC.checklistElementosTelaHomeBackofficeCL()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 3092550429,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "CL - acessar a opção de Serviços",
+            "match": {
+              "location": "TestsGIC.acessarOpcaoServicosCL()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 4255467773,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "CL - abrir a opção de Apontamento",
+            "match": {
+              "location": "TestsGIC.acessarOpcaoApontamentoCL()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 4335310577,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "CL - abrir a opção de Consultar Apontamento",
+            "match": {
+              "location": "TestsGIC.acessarOpcaoConsultarApontamentoCL()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 11993921229,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "CL - fazer o checklist para os elementos da página de Consulta de Apontamento",
+            "match": {
+              "location": "TestsGIC.checklistConsultaDeApontamentoCL()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 225519626,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "CL - acessar a opção de Incluir Apontamento",
+            "match": {
+              "location": "TestsGIC.acessarOpcaoIncluirApontamentoCL()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 58727404189,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "CL - fazer o checklist para os elementos da página de Incluir de Apontamento",
+            "match": {
+              "location": "TestsGIC.fazerChecklistIncluirApontamentoCL()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Checklist"
+          }
+        ]
+      }
+    ],
+    "name": "Testes da Sprint 17/18/19/20",
+    "description": "",
+    "id": "testes-da-sprint-17/18/19/20",
+    "keyword": "Funcionalidade",
+    "uri": "Feature.feature"
+  }
+]

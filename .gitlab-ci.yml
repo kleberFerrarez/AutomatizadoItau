@@ -1,0 +1,25 @@
+image: maven:3.5.4-jdk-8
+
+stages:
+  - test
+  - package
+  - deploy
+
+teste_cumcuber:
+  stage: test
+  before_script:
+    - whoami
+    - chmod 777 ./scripts/script-chromedriver
+    - ls -ltr ./scripts/script-chromedriver
+    - ./scripts/script-chromedriver
+  only: 
+    - master
+    - develop
+
+  script:
+    - whoami
+    - /usr/bin/chromedriver -v
+    - mvn test
+  only: 
+    - master
+    - develop

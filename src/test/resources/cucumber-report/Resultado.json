@@ -1,0 +1,70 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Teste Pesquisa BRQ",
+        "description": "",
+        "id": "testes-básicos;teste-pesquisa-brq",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 6183071000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "acessei o google",
+            "match": {
+              "location": "Tests.brq()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1467465000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "pesquisar sobre a BRQ",
+            "match": {
+              "location": "Tests.pesquisaBRQ()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 2531982900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "abra o site da BRQ",
+            "match": {
+              "location": "Tests.abrirSiteBRQ()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@BRQ"
+          }
+        ]
+      }
+    ],
+    "name": "Testes Básicos",
+    "description": "",
+    "id": "testes-básicos",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/Features/Feature.feature"
+  }
+]

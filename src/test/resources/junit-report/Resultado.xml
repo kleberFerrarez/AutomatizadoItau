@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.182519">
+<testcase classname="Testes Básicos" name="Teste Pesquisa BRQ" time="10.182519">
+<system-out><![CDATA[Dado acessei o google.......................................................passed
+Quando pesquisar sobre a BRQ................................................passed
+Então abra o site da BRQ....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
